@@ -14,37 +14,62 @@ function getHumanChoice (humanChoice) {
 
 }
 
-console.log (getComputerChoice(3))
+console.log (getComputerChoice(1))
 
 function gamePlay(humanAnswer,computerAnswer){
     
 
 
     humanAnswer = getHumanChoice(humanAnswer);
+        let HumanAnswer = humanAnswer;  
     computerAnswer = getComputerChoice(3);
 
 
-    if (computerAnswer === 1 ){
-        console.log("hiii")
+    // rock = 0
+    // paper = 1
+    // Scissors = 2
+
+    if (HumanAnswer === "rock" && computerAnswer === 0 || HumanAnswer === "paper" && computerAnswer === 1 || HumanAnswer === "Scissors" && computerAnswer === 2   ){
+        console.log("tie!")
+
+    // rock
+    } else if (HumanAnswer === "rock" && computerAnswer === 2){
+           console.log("Rock beats Siscors! (you win!) +1")
+           humanScore++;
+
+    } else if (HumanAnswer === "rock" && computerAnswer === 1){
+           console.log("Paper beats Rock! (you lost) :(")
+           computerScore++;  
+    //paper
+    } else if (HumanAnswer === "paper" && computerAnswer === 0){
+           console.log("Paper beats Rock! (you win!) +1")
+           humanScore++;
+
+    } else if (HumanAnswer === "paper" && computerAnswer === 2){
+           console.log("Siscors beats paper! (you lost) :(")
+           computerScore++;
+    } //Siscors
+    else if (HumanAnswer === "Siscors" && computerAnswer === 1){
+           console.log("Siscors beats Paper! (you win!) +1")
+           humanScore++; 
+           
+
+    } else if (HumanAnswer === "Siscors" && computerAnswer === 0){
+           console.log("Rock beats Siscors! (you lost) :(")
+           computerScore++;
+
     }
-
-
-}gamePlay()
+}
+gamePlay()
 
 
 
 
 
         
-    // if (HumanAnswer === "rock" ){
-    //    console.log ("rock!")
-    //    } else if (HumanAnswer ==="paper"){
-    //            console.log ("paper!")
-    //    }else if (HumanAnswer === "Scissors"){
-    //            console.log ("Scissors!")
-    //    }
-    
+
    
+
 
 
 
