@@ -1,7 +1,7 @@
 let humanScore = 0;
 let computerScore = 0;
 let roundNumber = 0;
-
+welcome = alert("Welcome to Rock, Paper, Scissors! Best of 5 rounds wins! open the terminal to see your score :)");
 function getComputerChoice(pcChoice) {
     return Math.floor(Math.random() * pcChoice);
 
@@ -15,7 +15,6 @@ function getHumanChoice(humanChoice) {
 
 }
 
-console.log(getComputerChoice(1))
 
 function gamePlay(humanAnswer, computerAnswer) {
 
