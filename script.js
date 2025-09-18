@@ -1,6 +1,6 @@
 let humanScore = 0;
 let computerScore = 0;
-
+let roundNumber = 0;
 function getComputerChoice(pcChoice){   
     return Math.floor(Math.random() * pcChoice);
 
@@ -33,18 +33,25 @@ function gamePlay(humanAnswer,computerAnswer){
         console.log("tie!")
         console.log("Score:" + humanScore)
         console.log("computer Score:" + computerScore)
+           roundNumber++;
+
+        console.log("round:"+ roundNumber) 
     // rock
     } else if (HumanAnswer === "rock" && computerAnswer === 2){
            console.log("Rock beats Siscors! (you win!) +1")
            humanScore++;
+           roundNumber++;
 
+        console.log("round:"+ roundNumber)   
         console.log("Score:" + humanScore)
         console.log("computer Score:" + computerScore)
 
     } else if (HumanAnswer === "rock" && computerAnswer === 1){
            console.log("Paper beats Rock! (you lost) :(")
            computerScore++; 
-           
+              roundNumber++;
+
+        console.log("round:"+ roundNumber) 
           console.log("Score:" + humanScore)
         console.log("computer Score:" + computerScore)
      
@@ -52,6 +59,9 @@ function gamePlay(humanAnswer,computerAnswer){
     } else if (HumanAnswer === "paper" && computerAnswer === 0){
            console.log("Paper beats Rock! (you win!) +1")
            humanScore++;   
+              roundNumber++;
+
+        console.log("round:"+ roundNumber) 
             console.log("Score:" + humanScore)
         console.log("computer Score:" + computerScore)
 
@@ -59,6 +69,9 @@ function gamePlay(humanAnswer,computerAnswer){
     } else if (HumanAnswer === "paper" && computerAnswer === 2){
            console.log("Siscors beats paper! (you lost) :(")
            computerScore++;
+              roundNumber++;
+
+        console.log("round:"+ roundNumber) 
                console.log("Score:" + humanScore)
         console.log("computer Score:" + computerScore)
 
@@ -67,6 +80,9 @@ function gamePlay(humanAnswer,computerAnswer){
     else if (HumanAnswer === "Siscors" && computerAnswer === 1){
            console.log("Siscors beats Paper! (you win!) +1")
            humanScore++; 
+              roundNumber++;
+
+        console.log("round:"+ roundNumber) 
                console.log("Score:" + humanScore)
         console.log("computer Score:" + computerScore)
 
@@ -74,6 +90,9 @@ function gamePlay(humanAnswer,computerAnswer){
     } else if (HumanAnswer === "Siscors" && computerAnswer === 0){
            console.log("Rock beats Siscors! (you lost) :(")
            computerScore++;
+              roundNumber++;
+
+        console.log("round:"+ roundNumber) 
                console.log("Score:" + humanScore)
         console.log("computer Score:" + computerScore)
 
