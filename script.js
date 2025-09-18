@@ -38,7 +38,7 @@ function gamePlay(humanAnswer, computerAnswer) {
             console.log("round:" + roundNumber)
             // rock
         } else if (HumanAnswer === "rock" && computerAnswer === 2) {
-            console.log("Rock beats Siscors! (you win!) +1")
+            console.log("Rock beats scissors! (you win!) +1")
             humanScore++;
             roundNumber++;
 
@@ -67,7 +67,7 @@ function gamePlay(humanAnswer, computerAnswer) {
 
 
         } else if (HumanAnswer === "paper" && computerAnswer === 2) {
-            console.log("Siscors beats paper! (you lost) :(")
+            console.log("scissors beats paper! (you lost) :(")
             computerScore++;
             roundNumber++;
 
@@ -76,9 +76,9 @@ function gamePlay(humanAnswer, computerAnswer) {
             console.log("computer Score:" + computerScore)
 
         }
-        //Siscors
-        else if (HumanAnswer === "Siscors" && computerAnswer === 1) {
-            console.log("Siscors beats Paper! (you win!) +1")
+        //scissors
+        else if (HumanAnswer === "scissors" && computerAnswer === 1) {
+            console.log("scissors beats Paper! (you win!) +1")
             humanScore++;
             roundNumber++;
 
@@ -87,8 +87,8 @@ function gamePlay(humanAnswer, computerAnswer) {
             console.log("computer Score:" + computerScore)
 
 
-        } else if (HumanAnswer === "Siscors" && computerAnswer === 0) {
-            console.log("Rock beats Siscors! (you lost) :(")
+        } else if (HumanAnswer === "scissors" && computerAnswer === 0) {
+            console.log("Rock beats scissors! (you lost) :(")
             computerScore++;
             roundNumber++;
 
