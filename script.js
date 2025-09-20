@@ -112,3 +112,8 @@ gamePlay()
     console.log("Final result: It's a tie!");
   }
 console.log("Final Score: " + humanScore + " - " + computerScore);
+console.log("Thanks for playing! Refresh the page to play again!");
+console.log("You played " + roundNumber + " rounds in total.");
+console.log("Have a great day!");
+console.log("Made by al for odin project");
+
