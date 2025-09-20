@@ -29,13 +29,17 @@ function gamePlay(humanAnswer, computerAnswer) {
         // paper = 1
         // Scissors = 2
 
-        if (HumanAnswer === "rock" && computerAnswer === 0 || HumanAnswer === "paper" && computerAnswer === 1 || HumanAnswer === "Scissors" && computerAnswer === 2) {
+        if (HumanAnswer === "rock" && computerAnswer === 0 || 
+            HumanAnswer === "paper" && computerAnswer === 1 || 
+            HumanAnswer === "Scissors" && computerAnswer === 2) {
+            
             console.log("tie!")
             console.log("Score:" + humanScore)
             console.log("computer Score:" + computerScore)
             roundNumber++;
 
             console.log("round:" + roundNumber)
+            // If both player and computer choose the same option, it's a tie
             // rock
         } else if (HumanAnswer === "rock" && computerAnswer === 2) {
             console.log("Rock beats scissors! (you win!) +1")
