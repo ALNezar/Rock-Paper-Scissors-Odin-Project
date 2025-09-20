@@ -1,0 +1,18 @@
+body{
+    background-color: #bead8e;
+}
+
+
+
+h1{
+    text-align: center;
+    color: #333;
+    font-family: Times New Roman, serif;
+    margin-top: 20px;
+}
+p{
+    text-align: center;
+    color: #555;
+    font-family: Arial, sans-serif;
+    margin: 10px 20px;
+}
